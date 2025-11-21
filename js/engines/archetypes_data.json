@@ -1,0 +1,734 @@
+{
+  "universalArchetypes": {
+    "hero": {
+      "id": "hero",
+      "title": "Hero",
+      "icon": "🌕",
+      "short": "Courage, growth, initiation",
+      "subtitle": "Reclaim your agency and step into your power",
+      "shadowPatterns": ["saboteur", "victim", "avoider", "imposter"],
+      "estimatedTime": "35-45 minutes",
+      "completionMessage": "The Hero's journey is not about becoming fearless. It's about acting in the presence of fear. You have reclaimed your agency. Each small act of courage builds the next. You are no longer waiting for permission. You are the one who gives it.",
+      "recommendedPractice": "Daily Courage Log: Each morning, write one small courageous action you will take that day. Each evening, celebrate that you did it.",
+      "steps": [
+        {
+          "id": "hero_recognition",
+          "title": "Recognition - When Do You Feel Powerless?",
+          "description": "The Hero shadow appears when we feel stuck, small, or unable to act. This is where we begin - by naming the moments when your power feels absent.",
+          "prompt": "When do you feel most powerless? What stops you from taking action? Describe a recent situation where you felt stuck or unable to move forward.",
+          "guidance": "Be specific. Not 'I feel powerless sometimes' but 'I felt powerless when I wanted to speak up in the meeting but stayed silent.' The more concrete, the clearer the pattern.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_saboteur_voice",
+          "title": "The Saboteur's Voice",
+          "description": "There is a voice that speaks right before you take action. It sounds reasonable, protective even. But it stops you. Let's listen to what it says.",
+          "prompt": "What does the voice say when you're about to succeed or take a risk? Write the exact words you hear internally.",
+          "guidance": "Don't argue with it yet. Just transcribe it like you're a journalist. What are the exact phrases it uses?",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_origin_story",
+          "title": "Origin Story - When Did You Learn to Stay Small?",
+          "description": "This pattern didn't start yesterday. There was a moment, or many moments, when you learned it was safer to hold back than to step forward.",
+          "prompt": "When did you first learn it was safer to stay small? Was there a moment in childhood, adolescence, or early adulthood when taking action led to pain, shame, or rejection?",
+          "guidance": "You're not looking for perfect memory. You're looking for the feeling-tone of the lesson. Trust what comes.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_cost_inventory",
+          "title": "Cost Inventory - What Have You Abandoned?",
+          "description": "Staying stuck has a price. Dreams deferred. Relationships not pursued. Creative work left undone. Let's name what this pattern has cost you.",
+          "prompt": "What dreams have you abandoned? What opportunities have you let pass? What's the real cost of staying stuck? Name at least three specific things.",
+          "guidance": "This may hurt. That's okay. Grief is part of reclaiming power. Be honest about what you've sacrificed to stay safe.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_worthy_self",
+          "title": "The Worthy Self - Who Would You Be?",
+          "description": "Imagine a version of you without this pattern. Not perfect, but free. Not fearless, but courageous. Who is that person?",
+          "prompt": "Who would you be without this pattern? Describe that version of yourself. How do they move through the world? What do they say yes to?",
+          "guidance": "This isn't fantasy. This is remembering who you actually are beneath the protection. Write in present tense.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_micro_courage",
+          "title": "Micro-Courage Practice",
+          "description": "Courage isn't built in grand gestures. It's built in small, repeated acts of choosing action over fear.",
+          "prompt": "Choose one small act of courage for this week. Something that scares you just enough to matter, but small enough to actually do.",
+          "guidance": "Make it concrete and time-bound.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_integration_ritual",
+          "title": "Integration Ritual - Stepping Forward",
+          "description": "The body remembers what the mind forgets. Create a physical gesture that represents stepping into your power.",
+          "prompt": "Create a symbolic gesture of stepping forward. What feels right?",
+          "guidance": "Choose something you can repeat daily for 7 days. Make it simple, repeatable, and meaningful.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "hero_completion",
+          "title": "Integration Summary",
+          "description": "You've named the pattern, heard the voice, honored the origin, counted the cost, and chosen courage. Now write your commitment.",
+          "prompt": "Write a 2-3 sentence commitment to yourself about how you will honor your Hero's journey this week.",
+          "guidance": "Keep it honest and small.",
+          "expectedInputType": "text"
+        }
+      ]
+    },
+    "lover": {
+      "id": "lover",
+      "title": "Lover",
+      "icon": "🌸",
+      "short": "Connection, sensuality, presence",
+      "subtitle": "Reclaim healthy boundaries and authentic desire",
+      "shadowPatterns": ["people_pleaser", "addict", "disconnected_lover"],
+      "estimatedTime": "35-45 minutes",
+      "completionMessage": "The Lover's healing is learning that your needs matter as much as anyone else's. You do not have to earn love by erasing yourself.",
+      "recommendedPractice": "Daily Desire Check-In: Each morning, ask yourself 'What do I want today?'",
+      "steps": [
+        {
+          "id": "lover_where_love_hurts",
+          "title": "Where Love Hurts",
+          "description": "The Lover shadow appears where connection becomes painful.",
+          "prompt": "Where do you give too much? Where do you abandon yourself for connection?",
+          "guidance": "Be tender with yourself here.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_bargain",
+          "title": "The People Pleaser's Bargain",
+          "description": "When you please others at your own expense, there's always an unconscious hope.",
+          "prompt": "What do you hope to receive by pleasing others?",
+          "guidance": "This isn't manipulation - it's a survival strategy.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_childhood_wounds",
+          "title": "Childhood Wounds",
+          "description": "You learned to abandon yourself somewhere.",
+          "prompt": "When did you learn your needs didn't matter?",
+          "guidance": "You may not have a specific memory. That's okay.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_desire_inventory",
+          "title": "Desire Inventory",
+          "description": "What do YOU actually want?",
+          "prompt": "What does your body, your heart, your soul actually desire?",
+          "guidance": "Start small if you need to. Don't censor.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_boundary_practice",
+          "title": "Boundary Practice",
+          "description": "This week, you will practice one clear boundary.",
+          "prompt": "What's one boundary you need to set this week?",
+          "guidance": "Make it specific.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_self_love_ritual",
+          "title": "Self-Love Ritual",
+          "description": "Now you will practice giving to yourself.",
+          "prompt": "Create a daily self-love practice you will do for 7 days.",
+          "guidance": "Start with 5 minutes. Self-love is a skill.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "lover_integration",
+          "title": "Integration",
+          "description": "Now choose.",
+          "prompt": "How will you honor your own heart going forward?",
+          "guidance": "You can love others AND love yourself.",
+          "expectedInputType": "text"
+        }
+      ]
+    },
+    "warrior": {
+      "id": "warrior",
+      "title": "Warrior",
+      "icon": "🔥",
+      "short": "Boundaries, action, protection",
+      "subtitle": "Wield your strength with wisdom",
+      "shadowPatterns": ["controller", "tyrant", "rebel", "timid_warrior"],
+      "estimatedTime": "35-45 minutes",
+      "completionMessage": "The sacred Warrior protects without dominating.",
+      "recommendedPractice": "Daily Boundary Practice",
+      "steps": [
+        {
+          "id": "warrior_armor_check",
+          "title": "The Armor Check",
+          "description": "Where are your boundaries too rigid or too porous?",
+          "prompt": "Where are you over-controlling? Where are you too passive?",
+          "guidance": "Most people are both.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_anger_archaeology",
+          "title": "Anger Archaeology",
+          "description": "What is your anger protecting?",
+          "prompt": "What's beneath your need to control or your fear of conflict?",
+          "guidance": "Go beneath the surface.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_wound",
+          "title": "The Wound",
+          "description": "When did you learn the world wasn't safe?",
+          "prompt": "When did you decide you had to control everything?",
+          "guidance": "What happened?",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_force_vs_violence",
+          "title": "Force vs Violence",
+          "description": "When is your anger protective? When destructive?",
+          "prompt": "Give examples of both.",
+          "guidance": "We're learning discernment.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_sacred_boundaries",
+          "title": "Sacred Boundaries",
+          "description": "What boundaries would a healthy Warrior hold?",
+          "prompt": "What would you protect? What would you let go of controlling?",
+          "guidance": "Boundaries are thresholds, not walls.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_embodiment",
+          "title": "Embodiment Practice",
+          "description": "Choose a physical practice for 7 days.",
+          "prompt": "What will you do?",
+          "guidance": "The body teaches the mind.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "warrior_integration",
+          "title": "Integration",
+          "description": "How will you wield your strength with wisdom?",
+          "prompt": "Write one commitment.",
+          "guidance": "Be specific.",
+          "expectedInputType": "text"
+        }
+      ]
+    },
+    "sage": {
+      "id": "sage",
+      "title": "Sage",
+      "icon": "💎",
+      "short": "Wisdom, perspective, clarity",
+      "subtitle": "Transform self-criticism into compassionate wisdom",
+      "shadowPatterns": ["inner_critic", "judge"],
+      "estimatedTime": "30-40 minutes",
+      "completionMessage": "You do not have to be perfect to be worthy.",
+      "recommendedPractice": "Critic-to-Sage Translation",
+      "steps": [
+        {
+          "id": "sage_critic_voice",
+          "title": "The Critic's Voice",
+          "description": "What does your inner critic say most often?",
+          "prompt": "Write the exact phrases.",
+          "guidance": "Don't filter.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_impossible_standard",
+          "title": "The Impossible Standard",
+          "description": "Where did you learn you had to be perfect?",
+          "prompt": "Who gave you that message?",
+          "guidance": "Trust what comes.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_shame_inventory",
+          "title": "Shame Inventory",
+          "description": "What are you most ashamed of?",
+          "prompt": "Name what you've been carrying.",
+          "guidance": "You are safe here.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_wise_witness",
+          "title": "The Wise Witness",
+          "description": "What would a compassionate observer say?",
+          "prompt": "How would they speak to you?",
+          "guidance": "Imagine a dear friend.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_reframe_practice",
+          "title": "Reframe Practice",
+          "description": "Translate criticism to wisdom.",
+          "prompt": "Take one critical thought and reframe it.",
+          "guidance": "Feel the difference.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_self_compassion_ritual",
+          "title": "Self-Compassion Ritual",
+          "description": "Choose a practice for 7 days.",
+          "prompt": "What feels right?",
+          "guidance": "Be patient with yourself.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "sage_integration",
+          "title": "Integration",
+          "description": "How will you speak to yourself with kindness?",
+          "prompt": "Write one commitment.",
+          "guidance": "Simple is best.",
+          "expectedInputType": "text"
+        }
+      ]
+    },
+    "healer": {
+      "id": "healer",
+      "title": "Healer",
+      "icon": "🌊",
+      "short": "Compassion, integration, service",
+      "subtitle": "Learn to receive and serve from fullness",
+      "shadowPatterns": ["martyr", "wounded_healer"],
+      "estimatedTime": "30-40 minutes",
+      "completionMessage": "Self-care is not selfish - it's sustainable.",
+      "recommendedPractice": "Daily Receiving Practice",
+      "steps": [
+        {
+          "id": "healer_giving_ledger",
+          "title": "The Giving Ledger",
+          "description": "Where do you over-give?",
+          "prompt": "Who do you rescue?",
+          "guidance": "Be honest.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_martyr_reward",
+          "title": "The Martyr's Reward",
+          "description": "What do you get from being the one who saves others?",
+          "prompt": "Be truthful about the hidden reward.",
+          "guidance": "This isn't selfishness.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_childhood_role",
+          "title": "Childhood Role",
+          "description": "When did you become the caretaker?",
+          "prompt": "Who didn't take care of you?",
+          "guidance": "You learned early.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_receiving_practice",
+          "title": "Receiving Practice",
+          "description": "What would it feel like to receive without giving back?",
+          "prompt": "Explore the discomfort.",
+          "guidance": "You are allowed to receive.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_boundary_ritual",
+          "title": "Boundary Ritual",
+          "description": "Let others carry their own burden.",
+          "prompt": "What's one way you'll do this?",
+          "guidance": "This is respect.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_self_healing",
+          "title": "Self-Healing",
+          "description": "Give to yourself.",
+          "prompt": "Choose one daily practice for 7 days.",
+          "guidance": "Make it non-negotiable.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "healer_integration",
+          "title": "Integration",
+          "description": "How will you serve from fullness?",
+          "prompt": "Write one commitment.",
+          "guidance": "Include yourself in the circle of care.",
+          "expectedInputType": "text"
+        }
+      ]
+    },
+    "shadow": {
+      "id": "shadow",
+      "title": "Shadow",
+      "icon": "🌑",
+      "short": "Container of disowned parts",
+      "subtitle": "Befriend what you've rejected",
+      "shadowPatterns": ["orphan", "exile"],
+      "estimatedTime": "35-45 minutes",
+      "completionMessage": "You are becoming whole.",
+      "recommendedPractice": "Shadow Check-In",
+      "steps": [
+        {
+          "id": "shadow_exile",
+          "title": "The Exile",
+          "description": "What part have you banished?",
+          "prompt": "Name the exile.",
+          "guidance": "This is often the opposite of how you present.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_banishment_story",
+          "title": "The Banishment Story",
+          "description": "When did you decide this part was unacceptable?",
+          "prompt": "What happened?",
+          "guidance": "What was the cost?",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_dialogue",
+          "title": "Shadow Dialogue",
+          "description": "Let it speak.",
+          "prompt": "What would it say to you?",
+          "guidance": "Don't censor.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_gift",
+          "title": "The Gift",
+          "description": "What strength is hidden here?",
+          "prompt": "What would you gain?",
+          "guidance": "Every shadow contains a gift.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_radical_welcome",
+          "title": "Radical Welcome",
+          "description": "Can you welcome this part back with compassion?",
+          "prompt": "Write what you would say.",
+          "guidance": "Start with willingness.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_integration_ritual",
+          "title": "Integration Ritual",
+          "description": "Create a symbolic act.",
+          "prompt": "What feels right?",
+          "guidance": "Make it simple and sacred.",
+          "expectedInputType": "text"
+        },
+        {
+          "id": "shadow_new_relationship",
+          "title": "New Relationship",
+          "description": "How will you relate to this part?",
+          "prompt": "Write one commitment.",
+          "guidance": "Integration is relationship.",
+          "expectedInputType": "text"
+        }
+      ]
+    }
+  },
+  "shadowArchetypes": {
+    "saboteur": {
+      "id": "saboteur",
+      "title": "The Saboteur",
+      "icon": "🎭",
+      "parent": "hero",
+      "category": "Hero Shadows",
+      "tagline": "Undermines success through self-destructive behavior",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "The Saboteur loses power when seen clearly. You now know its timing, its fears, and its cost. Each time you catch it and act anyway, you reclaim your right to succeed.",
+      "recommendedPractice": "Saboteur Journal: For 7 days, log each sabotage impulse.",
+      "steps": [
+        {"id": "saboteur_recognition", "title": "When Do You Sabotage?", "description": "The Saboteur strikes at specific moments.", "prompt": "Describe a recent time you were close to success and something got in the way.", "guidance": "Notice the timing.", "expectedInputType": "text"},
+        {"id": "saboteur_timing", "title": "The Saboteur's Timing", "description": "It appears at thresholds.", "prompt": "Does self-sabotage happen right before success, after a win, when visible, or when making progress?", "guidance": "Identify the trigger moment.", "expectedInputType": "text"},
+        {"id": "saboteur_hidden_fear", "title": "The Hidden Fear", "description": "What are you actually afraid of if you succeed?", "prompt": "Name the real fear.", "guidance": "Go beneath fear of failure.", "expectedInputType": "text"},
+        {"id": "saboteur_cost", "title": "The Cost Inventory", "description": "What has self-sabotage cost you?", "prompt": "Name 3 specific things.", "guidance": "Be concrete.", "expectedInputType": "text"},
+        {"id": "saboteur_practice", "title": "48-Hour Awareness Practice", "description": "Notice the impulse. Name the fear. Act anyway.", "prompt": "Commit to this practice.", "guidance": "Just notice and act anyway.", "expectedInputType": "text"}
+      ]
+    },
+    "victim": {
+      "id": "victim",
+      "title": "The Victim",
+      "icon": "⛓️",
+      "parent": "hero",
+      "category": "Hero Shadows",
+      "tagline": "Externalizes power, feels helpless and stuck",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You are not as powerless as the story says. You can act.",
+      "recommendedPractice": "Daily Agency Log",
+      "steps": [
+        {"id": "victim_powerless_moments", "title": "When Do You Feel Powerless?", "description": "Where do you feel stuck?", "prompt": "Describe the situations.", "guidance": "Notice where powerlessness becomes total.", "expectedInputType": "text"},
+        {"id": "victim_story", "title": "The Victim Story", "description": "What's the story you tell?", "prompt": "Write it out fully.", "guidance": "No judgment.", "expectedInputType": "text"},
+        {"id": "victim_hidden_safety", "title": "The Hidden Safety", "description": "What does powerlessness protect you from?", "prompt": "Be honest about what you gain.", "guidance": "This is hard to admit.", "expectedInputType": "text"},
+        {"id": "victim_one_choice", "title": "The One Choice", "description": "What is ONE thing you can control?", "prompt": "Find it.", "guidance": "It doesn't have to fix everything.", "expectedInputType": "text"},
+        {"id": "victim_practice", "title": "Reclaiming Agency Practice", "description": "One small action daily.", "prompt": "What will you do?", "guidance": "Small actions build power.", "expectedInputType": "text"}
+      ]
+    },
+    "avoider": {
+      "id": "avoider",
+      "title": "The Avoider",
+      "icon": "🌫️",
+      "parent": "hero",
+      "category": "Hero Shadows",
+      "tagline": "Procrastinates, distracts, withdraws from challenges",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Two minutes proves you can face what you fear.",
+      "recommendedPractice": "Daily 2-Minute Practice",
+      "steps": [
+        {"id": "avoider_what_you_avoid", "title": "What Are You Avoiding?", "description": "Name it.", "prompt": "What specific things?", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "avoider_tactics", "title": "Your Avoidance Tactics", "description": "How do you avoid?", "prompt": "Name your patterns.", "guidance": "No shame.", "expectedInputType": "text"},
+        {"id": "avoider_fear", "title": "What Are You Afraid Will Happen?", "description": "Name the emotional threat.", "prompt": "What are you afraid you'll feel?", "guidance": "Go to the catastrophic fantasy.", "expectedInputType": "text"},
+        {"id": "avoider_two_minute_action", "title": "The Two-Minute Action", "description": "What's the smallest first step?", "prompt": "What could you do in 120 seconds?", "guidance": "Two minutes. That's it.", "expectedInputType": "text"},
+        {"id": "avoider_practice", "title": "2-Minute Daily Practice", "description": "For 7 days.", "prompt": "Commit to it.", "guidance": "Two minutes is magic.", "expectedInputType": "text"}
+      ]
+    },
+    "imposter": {
+      "id": "imposter",
+      "title": "The Imposter",
+      "icon": "🎪",
+      "parent": "hero",
+      "category": "Hero Shadows",
+      "tagline": "Believes they're fraudulent despite evidence of competence",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You are not a fraud. You are skilled. The evidence is real.",
+      "recommendedPractice": "Evidence Journal",
+      "steps": [
+        {"id": "imposter_fraud_feeling", "title": "When Do You Feel Like a Fraud?", "description": "When does this strike?", "prompt": "Describe the situations.", "guidance": "Notice the pattern.", "expectedInputType": "text"},
+        {"id": "imposter_evidence_dismissal", "title": "How Do You Dismiss Your Competence?", "description": "Write the dismissals.", "prompt": "How do you explain away success?", "guidance": "Common ones.", "expectedInputType": "text"},
+        {"id": "imposter_origin", "title": "When Did You Decide You Weren't Enough?", "description": "When did you first feel this?", "prompt": "What was the origin?", "guidance": "Trust what comes.", "expectedInputType": "text"},
+        {"id": "imposter_evidence_collection", "title": "Evidence of Your Competence", "description": "Write proof.", "prompt": "5 specific examples.", "guidance": "Just list facts.", "expectedInputType": "text"},
+        {"id": "imposter_practice", "title": "Accepting Praise Practice", "description": "Just say thank you.", "prompt": "Commit to this.", "guidance": "Notice how hard it is.", "expectedInputType": "text"}
+      ]
+    },
+    "people_pleaser": {
+      "id": "people_pleaser",
+      "title": "The People Pleaser",
+      "icon": "🎀",
+      "parent": "lover",
+      "category": "Lover Shadows",
+      "tagline": "Abandons self to gain approval and avoid conflict",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You are allowed to say no. You are allowed to disappoint people.",
+      "recommendedPractice": "Daily No Practice",
+      "steps": [
+        {"id": "pleaser_who_you_please", "title": "Who Do You Please?", "description": "Who holds power over you?", "prompt": "Name them.", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "pleaser_cost", "title": "What Do You Abandon?", "description": "What do you sacrifice?", "prompt": "Name it.", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "pleaser_fear", "title": "What Are You Afraid Will Happen?", "description": "Name the catastrophic fear.", "prompt": "What if you stopped pleasing?", "guidance": "Go to worst case.", "expectedInputType": "text"},
+        {"id": "pleaser_one_no", "title": "The Practice of One No", "description": "Say no once this week.", "prompt": "What will it be?", "guidance": "Make it small but meaningful.", "expectedInputType": "text"},
+        {"id": "pleaser_practice", "title": "No Without Explanation", "description": "No is a complete sentence.", "prompt": "Commit to this.", "guidance": "You don't owe explanations.", "expectedInputType": "text"}
+      ]
+    },
+    "addict": {
+      "id": "addict",
+      "title": "The Addict",
+      "icon": "🍷",
+      "parent": "lover",
+      "category": "Lover Shadows",
+      "tagline": "Uses compulsion and numbing to escape emotional pain",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You can feel discomfort for 5 minutes and survive. The urge will pass.",
+      "recommendedPractice": "Urge Surfing Log",
+      "steps": [
+        {"id": "addict_substance", "title": "What Do You Use to Escape?", "description": "Name it.", "prompt": "What's your go-to?", "guidance": "No judgment.", "expectedInputType": "text"},
+        {"id": "addict_trigger", "title": "What Feeling Are You Escaping?", "description": "What's the trigger?", "prompt": "Name the emotion.", "guidance": "Common ones.", "expectedInputType": "text"},
+        {"id": "addict_cost", "title": "What Is This Costing You?", "description": "Count the cost.", "prompt": "3 specific ways.", "guidance": "Be concrete.", "expectedInputType": "text"},
+        {"id": "addict_feel_it", "title": "The Practice of Feeling", "description": "5 minutes of sitting with it.", "prompt": "Commit to this.", "guidance": "5 minutes won't kill you.", "expectedInputType": "text"},
+        {"id": "addict_practice", "title": "Urge Surfing", "description": "Ride the wave.", "prompt": "Commit to 5-minute timer.", "guidance": "It peaks around 3 minutes.", "expectedInputType": "text"}
+      ]
+    },
+    "disconnected_lover": {
+      "id": "disconnected_lover",
+      "title": "The Disconnected Lover",
+      "icon": "🧊",
+      "parent": "lover",
+      "category": "Lover Shadows",
+      "tagline": "Locked away from intimacy and sensuality",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Your body remembers how to feel. You can learn to be alive again.",
+      "recommendedPractice": "Sensation Journal",
+      "steps": [
+        {"id": "disconnected_where", "title": "Where Are You Disconnected?", "description": "Where do you feel numb?", "prompt": "Name it.", "guidance": "This can look like.", "expectedInputType": "text"},
+        {"id": "disconnected_when", "title": "When Did You Shut Down?", "description": "When did it begin?", "prompt": "What happened?", "guidance": "You're not looking for blame.", "expectedInputType": "text"},
+        {"id": "disconnected_cost", "title": "What Are You Missing?", "description": "What is disconnection costing?", "prompt": "What's locked away?", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "disconnected_sensation", "title": "The Practice of Sensation", "description": "5 minutes daily.", "prompt": "What will you practice?", "guidance": "Start non-threatening.", "expectedInputType": "text"},
+        {"id": "disconnected_practice", "title": "Daily Sensation Practice", "description": "For 7 days.", "prompt": "When will you do it?", "guidance": "Keep practicing.", "expectedInputType": "text"}
+      ]
+    },
+    "controller": {
+      "id": "controller",
+      "title": "The Controller",
+      "icon": "🎛️",
+      "parent": "warrior",
+      "category": "Warrior Shadows",
+      "tagline": "Over-manages to avoid vulnerability and uncertainty",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You can let go of control in small ways and survive. You can tolerate uncertainty.",
+      "recommendedPractice": "Daily Let-Go Practice",
+      "steps": [
+        {"id": "controller_what", "title": "What Do You Control?", "description": "Name what you grip.", "prompt": "What areas?", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "controller_fear", "title": "What Are You Afraid Will Happen?", "description": "Name the fear.", "prompt": "If you let go?", "guidance": "Go to worst case.", "expectedInputType": "text"},
+        {"id": "controller_cost", "title": "What Is Control Costing You?", "description": "Count the cost.", "prompt": "3 specific costs.", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "controller_let_go", "title": "The Practice of Letting Go", "description": "One thing this week.", "prompt": "What will it be?", "guidance": "Make it small but real.", "expectedInputType": "text"},
+        {"id": "controller_practice", "title": "Tolerance for Uncertainty", "description": "I can tolerate this.", "prompt": "Commit to practicing.", "guidance": "5 minutes at a time.", "expectedInputType": "text"}
+      ]
+    },
+    "tyrant": {
+      "id": "tyrant",
+      "title": "The Tyrant",
+      "icon": "👑",
+      "parent": "warrior",
+      "category": "Warrior Shadows",
+      "tagline": "Dominates others and suppresses emotion",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "True strength is knowing when to yield. Your vulnerability is courage.",
+      "recommendedPractice": "Daily Yielding Practice",
+      "steps": [
+        {"id": "tyrant_domination", "title": "Where Do You Dominate?", "description": "Where do you use force?", "prompt": "Name it.", "guidance": "Hard to admit.", "expectedInputType": "text"},
+        {"id": "tyrant_vulnerability", "title": "What Vulnerability Are You Avoiding?", "description": "What are you protecting?", "prompt": "Name it.", "guidance": "What did you learn?", "expectedInputType": "text"},
+        {"id": "tyrant_damage", "title": "Who Have You Hurt?", "description": "Acknowledge the damage.", "prompt": "Name them.", "guidance": "This requires courage.", "expectedInputType": "text"},
+        {"id": "tyrant_repair", "title": "The Practice of Yielding", "description": "Let someone else lead.", "prompt": "Where will you yield?", "guidance": "This isn't losing.", "expectedInputType": "text"},
+        {"id": "tyrant_practice", "title": "Asking, Not Demanding", "description": "Make requests.", "prompt": "Commit to this.", "guidance": "Give others agency.", "expectedInputType": "text"}
+      ]
+    },
+    "rebel": {
+      "id": "rebel",
+      "title": "The Rebel",
+      "icon": "🔥",
+      "parent": "warrior",
+      "category": "Warrior Shadows",
+      "tagline": "Reactively defies structure and authority",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "True freedom is choosing - sometimes yes, sometimes no, always conscious.",
+      "recommendedPractice": "Choice Log",
+      "steps": [
+        {"id": "rebel_what_you_resist", "title": "What Do You Resist?", "description": "Name patterns of defiance.", "prompt": "What do you resist?", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "rebel_freedom_or_reaction", "title": "Is It Freedom or Reaction?", "description": "Are you choosing or reacting?", "prompt": "Is your no free?", "guidance": "Hard to see.", "expectedInputType": "text"},
+        {"id": "rebel_what_you_fear", "title": "What Are You Afraid Of?", "description": "Name the fear.", "prompt": "What are you protecting?", "guidance": "Common fears.", "expectedInputType": "text"},
+        {"id": "rebel_cost", "title": "What Is Rebellion Costing You?", "description": "Name the price.", "prompt": "3 ways.", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "rebel_practice", "title": "The Practice of Conscious Choice", "description": "Pause before resisting.", "prompt": "Commit to this.", "guidance": "You may still choose no.", "expectedInputType": "text"}
+      ]
+    },
+    "timid_warrior": {
+      "id": "timid_warrior",
+      "title": "The Timid Warrior",
+      "icon": "🕊️",
+      "parent": "warrior",
+      "category": "Warrior Shadows",
+      "tagline": "Cannot hold boundaries or access healthy force",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Boundaries are not violence. You are allowed to protect yourself.",
+      "recommendedPractice": "Boundary Practice",
+      "steps": [
+        {"id": "timid_no_boundaries", "title": "Where Are Your Boundaries Missing?", "description": "Where do you collapse?", "prompt": "Name it.", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "timid_fear_of_force", "title": "What Are You Afraid Your Force Will Do?", "description": "Name the fear.", "prompt": "What stops you?", "guidance": "Common fears.", "expectedInputType": "text"},
+        {"id": "timid_cost", "title": "What Is Timidity Costing You?", "description": "Count the cost.", "prompt": "3 specific costs.", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "timid_one_boundary", "title": "The Practice of One Boundary", "description": "Hold one boundary.", "prompt": "What will it be?", "guidance": "Make it specific.", "expectedInputType": "text"},
+        {"id": "timid_practice", "title": "Firm and Kind", "description": "Clear limit, gentle delivery.", "prompt": "Commit to this.", "guidance": "Not aggressive, not apologetic.", "expectedInputType": "text"}
+      ]
+    },
+    "inner_critic": {
+      "id": "inner_critic",
+      "title": "The Inner Critic",
+      "icon": "🗡️",
+      "parent": "sage",
+      "category": "Sage Shadows",
+      "tagline": "Relentless self-attack and perfectionism",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Perfection is a prison. You can thank the Critic and stop believing it.",
+      "recommendedPractice": "Critic Translation",
+      "steps": [
+        {"id": "critic_harsh_words", "title": "The Critic's Harshest Words", "description": "Write exact phrases.", "prompt": "No filtering.", "guidance": "Don't soften.", "expectedInputType": "text"},
+        {"id": "critic_when_it_strikes", "title": "When Does It Strike?", "description": "Name trigger moments.", "prompt": "When?", "guidance": "Notice the pattern.", "expectedInputType": "text"},
+        {"id": "critic_false_promise", "title": "The Critic's False Promise", "description": "What does it promise?", "prompt": "What's it protecting from?", "guidance": "The Critic's logic.", "expectedInputType": "text"},
+        {"id": "critic_evidence_against", "title": "Evidence Against the Critic", "description": "Collect evidence.", "prompt": "3 pieces.", "guidance": "Facts, not feelings.", "expectedInputType": "text"},
+        {"id": "critic_practice", "title": "Thank You and Goodbye", "description": "Release its service.", "prompt": "Commit to this phrase.", "guidance": "Acknowledge and release.", "expectedInputType": "text"}
+      ]
+    },
+    "judge": {
+      "id": "judge",
+      "title": "The Judge",
+      "icon": "⚖️",
+      "parent": "sage",
+      "category": "Sage Shadows",
+      "tagline": "Projects moral superiority and criticizes others",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Curiosity connects you. You can discern without condemning.",
+      "recommendedPractice": "Judgment-to-Curiosity Log",
+      "steps": [
+        {"id": "judge_who", "title": "Who Do You Judge?", "description": "Name your targets.", "prompt": "Who?", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "judge_what_it_protects", "title": "What Does Judgment Protect You From?", "description": "Name what you're defending.", "prompt": "What feeling?", "guidance": "The Judge's logic.", "expectedInputType": "text"},
+        {"id": "judge_projection", "title": "What Are You Judging in Yourself?", "description": "What are you projecting?", "prompt": "Look closely.", "guidance": "Radical honesty.", "expectedInputType": "text"},
+        {"id": "judge_cost", "title": "What Is Judgment Costing You?", "description": "Name the price.", "prompt": "3 ways.", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "judge_practice", "title": "Curiosity Instead of Judgment", "description": "Replace judgment with wonder.", "prompt": "Commit to this.", "guidance": "Curiosity opens.", "expectedInputType": "text"}
+      ]
+    },
+    "martyr": {
+      "id": "martyr",
+      "title": "The Martyr",
+      "icon": "✝️",
+      "parent": "healer",
+      "category": "Healer Shadows",
+      "tagline": "Over-gives to avoid own needs and rescues compulsively",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You are worthy without giving everything away. Receiving is human.",
+      "recommendedPractice": "Receiving Log",
+      "steps": [
+        {"id": "martyr_sacrifice", "title": "Where Do You Sacrifice Yourself?", "description": "Name the pattern.", "prompt": "Where?", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "martyr_what_you_earn", "title": "What Do You Earn Through Sacrifice?", "description": "Name hidden reward.", "prompt": "What do you hope for?", "guidance": "Survival strategy.", "expectedInputType": "text"},
+        {"id": "martyr_resentment", "title": "Where Does Resentment Live?", "description": "Name it.", "prompt": "Who do you resent?", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "martyr_needs", "title": "What Do YOU Need?", "description": "Name unmet needs.", "prompt": "3 needs.", "guidance": "You're human.", "expectedInputType": "text"},
+        {"id": "martyr_practice", "title": "The Practice of Receiving", "description": "Receive without giving back.", "prompt": "Commit to this.", "guidance": "Do it anyway.", "expectedInputType": "text"}
+      ]
+    },
+    "wounded_healer": {
+      "id": "wounded_healer",
+      "title": "The Wounded Healer",
+      "icon": "🩹",
+      "parent": "healer",
+      "category": "Healer Shadows",
+      "tagline": "Serves from depletion and cannot receive care",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "Your wounds deserve care. Tend yourself first.",
+      "recommendedPractice": "Self-Care Commitment",
+      "steps": [
+        {"id": "wounded_healer_depletion", "title": "Where Are You Depleted?", "description": "Name it.", "prompt": "Where?", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "wounded_healer_untended_wounds", "title": "What Wounds Remain Untended?", "description": "Name what's unhealed.", "prompt": "What have you ignored?", "guidance": "This requires courage.", "expectedInputType": "text"},
+        {"id": "wounded_healer_why", "title": "Why Don't You Tend Your Own Wounds?", "description": "What stops you?", "prompt": "What are you afraid of?", "guidance": "Common fears.", "expectedInputType": "text"},
+        {"id": "wounded_healer_permission", "title": "Giving Yourself Permission", "description": "Write permission.", "prompt": "What words do you need?", "guidance": "Examples.", "expectedInputType": "text"},
+        {"id": "wounded_healer_practice", "title": "One Act of Self-Care", "description": "Tend your wounds.", "prompt": "What and when?", "guidance": "Make it concrete.", "expectedInputType": "text"}
+      ]
+    },
+    "orphan": {
+      "id": "orphan",
+      "title": "The Orphan",
+      "icon": "🏚️",
+      "parent": "shadow",
+      "category": "Shadow Shadows",
+      "tagline": "Chronic abandonment and deep loneliness",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You are not as alone as the wound says. You can risk connection.",
+      "recommendedPractice": "Reach Out Log",
+      "steps": [
+        {"id": "orphan_abandonment", "title": "Where Do You Feel Abandoned?", "description": "Name it.", "prompt": "Where?", "guidance": "Be honest.", "expectedInputType": "text"},
+        {"id": "orphan_origin", "title": "The Original Abandonment", "description": "When did it start?", "prompt": "What happened?", "guidance": "Trust what emerges.", "expectedInputType": "text"},
+        {"id": "orphan_protection", "title": "How Do You Protect Yourself?", "description": "Name your defenses.", "prompt": "Your strategies?", "guidance": "Common ones.", "expectedInputType": "text"},
+        {"id": "orphan_who_stays", "title": "Who Has Actually Stayed?", "description": "Look for evidence.", "prompt": "Name 3 people or moments.", "guidance": "Hard for Orphan to see.", "expectedInputType": "text"},
+        {"id": "orphan_practice", "title": "The Practice of Reaching Out", "description": "Risk being seen.", "prompt": "Who and when?", "guidance": "This terrifies the Orphan.", "expectedInputType": "text"}
+      ]
+    },
+    "exile": {
+      "id": "exile",
+      "title": "The Exile",
+      "icon": "🌑",
+      "parent": "shadow",
+      "category": "Shadow Shadows",
+      "tagline": "Disowned aspects and rejected parts of self",
+      "estimatedTime": "20-25 minutes",
+      "completionMessage": "You can welcome it back. You are becoming whole.",
+      "recommendedPractice": "Exile Dialogue",
+      "steps": [
+        {"id": "exile_what_is_exiled", "title": "What Part Have You Exiled?", "description": "Name the exile.", "prompt": "What part?", "guidance": "Common exiles.", "expectedInputType": "text"},
+        {"id": "exile_why", "title": "Why Did You Exile This Part?", "description": "What happened?", "prompt": "Who rejected it?", "guidance": "Be specific.", "expectedInputType": "text"},
+        {"id": "exile_symptoms", "title": "How Does the Exile Speak Now?", "description": "Through what symptoms?", "prompt": "Where do you see it?", "guidance": "Examples.", "expectedInputType": "text"},
+        {"id": "exile_gift", "title": "What Gift Does the Exile Hold?", "description": "What would you gain?", "prompt": "What capacity?", "guidance": "Examples.", "expectedInputType": "text"},
+        {"id": "exile_welcome", "title": "Welcoming the Exile Home", "description": "Write a welcome message.", "prompt": "What would you say?", "guidance": "Example provided.", "expectedInputType": "text"}
+      ]
+    }
+  }
+}
