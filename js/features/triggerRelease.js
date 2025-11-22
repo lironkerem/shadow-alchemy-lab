@@ -35,44 +35,45 @@ export function openTriggerReleaseModal(entry = null) {
     id: 'triggerReleaseModal',
     title: isEditing ? 'View / Edit Trigger' : 'Trigger Release',
     subtitle: 'Record emotional reactions and patterns to understand your inner landscape.',
-content: `
-  <div style="display:flex;flex-direction:column;gap:var(--spacing-md);max-height:calc(90vh - 220px);overflow-y:auto;padding-right:var(--spacing-sm)">
+    content: `
+      <div style="display:flex;flex-direction:column;gap:var(--spacing-md);max-height:calc(90vh - 220px);overflow-y:auto;padding-right:var(--spacing-sm)">
 
-    <!-- inputs -->
-    <div>
-      <label class="form-label">Who or What Triggered you?</label>
-      <input type="text" id="trigger-source" class="form-input" placeholder="e.g., My boss, A comment, Traffic..." value="${isEditing && entry.source ? entry.source : ''}">
-    </div>
+        <!-- inputs -->
+        <div>
+          <label class="form-label">Who or What Triggered you?</label>
+          <input type="text" id="trigger-source" class="form-input" placeholder="e.g., My boss, A comment, Traffic..." value="${isEditing && entry.source ? entry.source : ''}">
+        </div>
 
-    <label class="form-label">Describe your trigger</label>
-    <textarea id="trigger-textarea" class="form-input" style="min-height:150px;resize:none" placeholder="What happened and how did it make you feel?">${isEditing ? entry.text : ''}</textarea>
+        <label class="form-label">Describe your trigger</label>
+        <textarea id="trigger-textarea" class="form-input" style="min-height:150px;resize:none" placeholder="What happened and how did it make you feel?">${isEditing ? entry.text : ''}</textarea>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-md)">
-      <div>
-        <label class="form-label">Core Trigger:</label>
-        <select id="trigger-core-trigger" class="form-input"><option value="">Choose Core Trigger</option>${coreTriggerOptions}</select>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-md)">
+          <div>
+            <label class="form-label">Core Trigger:</label>
+            <select id="trigger-core-trigger" class="form-input"><option value="">Choose Core Trigger</option>${coreTriggerOptions}</select>
+          </div>
+          <div>
+            <label class="form-label">Specific emotion:</label>
+            <select id="trigger-emotion" class="form-input" ${!isEditing || !entry.coreTrigger ? 'disabled' : ''} style="color:${!isEditing || !entry.coreTrigger ? '#9ca3af' : ''}">
+              ${emotionOptionsHTML}
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label">Intensity (0-10):</label>
+          <div style="display:flex;align-items:center;gap:var(--spacing-sm)">
+            <input type="range" id="trigger-intensity-slider" class="intensity-slider" min="0" max="10" value="${isEditing ? entry.intensity : 5}" style="flex:1">
+            <span id="trigger-intensity-value" class="intensity-value">${isEditing ? entry.intensity : 5}</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <label class="form-label">Specific emotion:</label>
-       <select id="trigger-emotion" class="form-input" disabled style="color:#9ca3af">
-        <option value="">First select a Core Trigger</option>${emotionOptionsHTML}</select>
-      </div>
-    </div>
-
-    <div>
-      <label class="form-label">Intensity (0-10):</label>
-      <div style="display:flex;align-items:center;gap:var(--spacing-sm)">
-        <input type="range" id="trigger-intensity-slider" class="intensity-slider" min="0" max="10" value="${isEditing ? entry.intensity : 5}" style="flex:1">
-        <span id="trigger-intensity-value" class="intensity-value">${isEditing ? entry.intensity : 5}</span>
-      </div>
-    </div>
-  </div>
-`,
-actions: `
-  ${isEditing ? '<button id="deleteTriggerEntry" class="btn">Delete</button>' : ''}
-  <button id="closeTriggerModal" class="btn">Close</button>
-  <button id="saveTriggerEntry" class="btn btn-primary">Save Entry</button>
-`,
+    `,
+    actions: `
+      ${isEditing ? '<button id="deleteTriggerEntry" class="btn">Delete</button>' : ''}
+      <button id="closeTriggerModal" class="btn">Close</button>
+      <button id="saveTriggerEntry" class="btn btn-primary">Save Entry</button>
+    `,
   });
 
   /* ---------- wire events ---------- */
@@ -80,22 +81,34 @@ actions: `
   const valueDisplay = modal.querySelector('#trigger-intensity-value');
   slider.addEventListener('input', () => valueDisplay.textContent = slider.value);
 
+  // FIXED: Core trigger change handler - placed BEFORE save logic
+  const coreSelect = modal.querySelector('#trigger-core-trigger');
+  const emotionSelect = modal.querySelector('#trigger-emotion');
+
+  coreSelect.addEventListener('change', () => {
+    const selectedCore = coreSelect.value;
+    
+    if (selectedCore && coreTriggers[selectedCore]) {
+      // Enable emotion dropdown and populate with emotions
+      emotionSelect.disabled = false;
+      emotionSelect.style.color = '';
+      emotionSelect.innerHTML = coreTriggers[selectedCore].map(e =>
+        `<option value="${e}">${e}</option>`
+      ).join('');
+    } else {
+      // Disable and reset emotion dropdown
+      emotionSelect.disabled = true;
+      emotionSelect.style.color = '#9ca3af';
+      emotionSelect.innerHTML = '<option value="">First select a Core Trigger</option>';
+    }
+  });
+
   modal.querySelector('#saveTriggerEntry').addEventListener('click', () => {
     const source = modal.querySelector('#trigger-source').value.trim();
-    const text   = modal.querySelector('#trigger-textarea').value.trim();
-    const core   = modal.querySelector('#trigger-core-trigger').value;
-    const emotion= modal.querySelector('#trigger-emotion').value;
+    const text = modal.querySelector('#trigger-textarea').value.trim();
+    const core = modal.querySelector('#trigger-core-trigger').value;
+    const emotion = modal.querySelector('#trigger-emotion').value;
     const intensity = parseInt(slider.value);
-/* ----- grey until core chosen ----- */
-const coreSelect   = modal.querySelector('#trigger-core-trigger');
-const emotionSelect= modal.querySelector('#trigger-emotion');
-
-coreSelect.addEventListener('change', () => {
-  const hasCore = coreSelect.value !== '';
-  emotionSelect.disabled = !hasCore;
-  emotionSelect.style.color = hasCore ? '' : '#9ca3af'; // grey when disabled
-  if (!hasCore) emotionSelect.value = '';               // reset if emptied
-});
 
     if (!text || !core || !emotion) return showToast('Required fields missing', 'error');
 

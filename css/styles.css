@@ -253,7 +253,7 @@ textarea::placeholder {
 .logo.project-curiosity {
     width: 100%;
     max-width: 860px;
-    margin: 0 auto 2rem;
+    margin: 28px auto 2rem; /* Added top margin */
     padding: 15px 24px;
     background: linear-gradient(135deg, var(--neuro-accent), var(--neuro-accent-light));
     border-radius: var(--radius-2xl);

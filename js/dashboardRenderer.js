@@ -33,7 +33,7 @@ export function renderDashboard() {
         if (entry.type === 'trigger') return triggerRow(entry);
         return dialogueRow(entry);
       }).join('')
-    : '<p class="muted">No entries saved yet. Complete a Shadow Guided Process, a Shadow Dialogue, or Trigger Release.</p>';
+    : '<p class="muted">No entries saved yet.</p>';
 
   /* ---------- cards ---------- */
   const engine = window.archetypesEngine;
