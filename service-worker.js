@@ -27,7 +27,7 @@ const urlsToCache = [
   
   // Engines and data
   '/js/engines/archetypesEngine.js',
-  '/js/engines/dailyJourneyEngine.js',
+  '/js/engines/DailyJourneyEngine.js',
   '/js/engines/archetypes_data.json',
   
   // PWA assets
