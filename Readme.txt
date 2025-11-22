@@ -28,4 +28,4 @@ shadow-alchemy/
 │     ├─ dailyJourneyEngine.js
 │     └─ archetypes_data.json
 │
-└─ assets/...
+└─ icons/

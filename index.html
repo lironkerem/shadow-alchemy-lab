@@ -4,13 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shadow Alchemy Lab - Aanandoham's Project Curiosity</title>
+  
+  <!-- PWA Configuration -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#764ba2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Shadow Alchemy Lab">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   
-<div class="logo" style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25rem">
+<div class="logo project-curiosity">
   <div class="logo-text">Shadow Alchemy Lab</div>
-  <div class="logo-sub">Transform your Shadows into Gold</div>
 </div>
 
   <!-- Main Content -->
@@ -22,6 +34,16 @@
 <script type="module" src="js/engines/archetypesEngine.js"></script>
 <script type="module" src="js/engines/dailyJourneyEngine.js"></script>
 <script type="module" src="js/controller.js"></script>
+<!-- PWA Service Worker Registration -->
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('✅ Service Worker registered:', reg.scope))
+        .catch(err => console.error('❌ Service Worker registration failed:', err));
+    });
+  }
+  </script>
 
 </body>
 </html>
